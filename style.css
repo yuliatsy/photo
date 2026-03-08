@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.square{
+	    width: 80px;
+		height: 80px;
+		margin: 30px auto;
+		background-color: #ccebd2;
+		animation-name: spin;
+		animation-duration:4s;
+		animation-timing-function:linear;
+		animation-iteration-count: infinite;
+		animation-direction:alternate;
+}
+@keyframes spin{
+	   0% {transform:rotate(0deg);     }
+	   25% {background-color:#3d7d49;    }
+	   100%{transform: rotate(360deg); }
+}
+h2,h3,p{
+	font-family: "Lobster", sans-serif;
+}
+body{
+	background-image:url("https://static.vecteezy.com/system/resources/previews/009/229/194/large_2x/brown-wooden-table-texture-for-background-or-wallpaper-use-free-photo.jpg")
+}
+header,footer{
+	background-color:#3a573f;
+	padding: 5px;
+}
+main{
+	padding: 10px;
+	background-image:url("https://static.vecteezy.com/system/resources/previews/009/229/194/large_2x/brown-wooden-table-texture-for-background-or-wallpaper-use-free-photo.jpg");
+	padding: 10px;
+}
+.post{
+	background-color:rgba(68, 99, 73, 0.8);
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	display:flex;
+}
+.post img{
+	margin: 20px;
+}
+.footer-columns{
+	display: flex;
+}
+.footer-column{
+	flex: 50%;
+	margin:20px;
+}
+#menu{
+	position:relative;
+	display:block;
+	width:100%;
+	height:auto;
+	z-index:10;
+}
+#menu ul{
+	position:relative;
+	display:block;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:auto;
+	list-style:none;
+}
+#menu > ul::after{
+	display:block;
+	width:100%;
+	height:0px;
+	clear:both;
+	content: " ";
+}
+#menu ul li{
+	position:relative;
+	display:block;
+	float:left;
+	height:auto;
+	width:auto;
+}
+#menu ul li a{
+	display:block;
+	padding:9px 25px 2px 25px;
+	font-size: 13px;
+	line-height:1.3en;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	height:38px;
+	box-sizing: border-box;
+	color:#479E26 ;
+}
+#menu ul li ul{
+	position: absolute;
+	top: 40px;
+	left:0px;
+	display:none;
+	width:200px;
+	background-color:#348D34;
+	box-shadow:3px 3px 10px 1px #361538 ;
+}
+#menu ul li:hover a{
+	color:#80EA80;
+	font-size:120%;
+	background:#4F6F52;
+}
+#menu ul li:hover ul{
+	display:block;
+}
+#menu ul li ul li {
+	float: none;
+	width:100%;
+}
+#menu ul li ul li a{
+	display:block;
+	text-transform: none;
+	height: auto;
+	padding: 5px 20px;
+	width:100%;
+	box-sizing: border-box;
+	border-top: 1px solid #000000;
+	color:  #80EA80;
+}
+#menu ul li ul li:first-child a{
+	border-top: 0px;
+}
+a:hover{
+	color:#80EA80;
+	font-size:120%;
+}
